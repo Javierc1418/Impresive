@@ -16,34 +16,43 @@ a {
 /*------header-----*/
 
 header {
-    background-color: rgb(11, 10, 22);
     position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
     top: 0;
-    font-size: 25px;
+    font-size: 15px;
         }
-header nav ul li {
-    display: inline-block;
-    margin: 15px;
+
+
+
+header {
+    background-color: black;
 }
-header nav ul li a { 
-    color: white;
-    /*--font-family: 'Comfortaa', cursive;--*/
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
+header nav{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
 }
+
+
+.navbar-nav a {
+    color: black;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 header img {
-    width: ;   
-    height:100px ;
+    width:400PX ;
 }
 /*------main------*/
 
 .hero {
     background-image: url("../img/fondo.jpg") ;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(80vh - 122px);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -53,17 +62,19 @@ header img {
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    
+    box-sizing: border-box;
+
 }
 
-.hero div h1 { 
+.hero div h1 {
     color: white;
     font-size: 70px;
 
 }
 
 .hero div {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.493);
+    border-radius: 15PX;
 }
 .hero div p {
     font-size: 20px;
@@ -76,66 +87,69 @@ header img {
     justify-content: center;
     background-color: rgb(0, 170, 213);
     text-align: center;
-} 
-   
- .exhibicion div h2 {
-    
+
+}
+
+.exhibicion div h2 {
+
     color: white;
     text-align: center;
     font-size:30px;
     margin: 20px;
- }
- .exhibicion div p {
+}
+.exhibicion div p {
     color: white;
     text-align: center;
     font-size: 20px;
     margin: 25px;
- }
- 
- .exhibicion div a {
+}
+
+.exhibicion div a {
     color: white;
     background-color: black;
     font-size: 20px;
     padding: 15px 15px 0px 15px;
- }
+    border-radius: 5px;
+}
 
- .exhibicion img {  
+.exhibicion img {
     width: 50%;
     flex-wrap: wrap;
- }
+}
 
- .decoracion {
+.decoracion {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
     background-color:rgb(0, 170, 213) ;
     text-align: center;
- }
+}
 
- .decoracion div h2 {
+.decoracion div h2 {
     color: white;
     text-align: center;
     font-size:30px;
     margin: 20px;
- }
+}
 
- .decoracion div p {
+.decoracion div p {
     color: white;
     text-align: center;
     font-size: 20px;
     margin: 25px;
- }
+}
 
- .decoracion div a {
+.decoracion div a {
     color: white;
     background-color: black;
     font-size: 20px;
     padding: 15px 15px 0px 15px;
- }
- .decoracion img {
+    border-radius: 5px;
+}
+.decoracion img {
     width: 50%;
- }
+}
 
 .titulo {
     background-color: black;
@@ -146,18 +160,19 @@ header img {
 }
 .producto {
     display: flex ;
+    justify-content: center;
+    align-items: center;
 }
 .producto div img {
-    width:300px;
+    width:290px;
     height: 250px;
-                    
+
 }
 .producto div {
     width: 300px;
-    height: 350px;
+    height: 380px;
     border: 1px black solid;
     text-align: center;
-    /*--display: inline-block--*/ ;
     margin: 30px 100px 90px 115px;
 
 }
@@ -169,14 +184,15 @@ header img {
     background-color: black;
     color: white;
     padding: 10px;
-    
-    
+    border-radius: 15px;
+
+
 }
 /*-------fin del main-----*/
 /*-------footer-----*/
 footer {
     background-color: black;
-    padding: 25px;
+    padding: 5px 25px 0px 0px;
 }
 
 .pie {
@@ -195,9 +211,997 @@ footer {
     font-size:20px;
     margin: 10px;
 }
-.pie img { 
-   width: 40px;
-   height: 40px;
-   margin: 10px;
+.pie img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+/* fin del footer */
+/* fin del index */
+
+/*comienzo page tecnoligia */
+
+.titilo-de-tecnologia {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+.titilo-de-tecnologia h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    }
+.latex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: calc(100vh- 122px)
 
 }
+.latex div{
+    width: 50%;
+}
+
+.latex div h2 {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.latex div p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.latex iframe {
+    width: 50%;
+    height: calc(100vh - 122px);
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.latex2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 100;
+
+}
+
+.latex2 div {
+    width: 50%;
+}
+.latex2 div h2 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+.latex2 div p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.latex2 iframe {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 50%;
+}
+
+.separador {
+    background-color: white;
+    width: 100%;
+    height: 5px;
+}
+/* fin del page tecnologia*/
+
+/* comienso del page de servicio */
+
+.titulo-servicio {
+    background-color:rgb(0, 170, 213);
+    padding-bottom: 20px;
+}
+.titulo-servicio h1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.titulo-servicio p{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 500px;
+
+}
+
+.titulo2 {
+    display: flex;
+    background-color: rgb(0, 170, 213);
+    padding: 5px;
+    justify-content: center;
+}
+
+.titulo2 h2{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+
+}
+.titulo2 h2{
+    border: 2px solid white;
+    border-radius: 15px;
+    height: 50px;
+    width: 650px;
+
+}
+.titulo2 h3{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.titulo2 h3{
+    border: 2px solid white;
+    border-radius: 15px;
+    height: 50px;
+    width: 650px;
+
+}
+
+.titulo2 h4{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.titulo2 h4{
+    border: 2px solid white;
+    border-radius: 15px;
+    height: 50px;
+    width: 650px;
+
+}
+/* fin de page de servicios */
+
+/* comienzo de page de productos */
+
+.t-producto{
+    background-color: rgb(0, 170, 213);
+    height: 100px;
+    width: 100%;
+
+}
+
+.t-producto div h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.producto2{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    margin:50px ;
+}
+.producto2 div img {
+    width:450px;
+    height: 400px;
+
+}
+.producto2 div {
+    width: 450px;
+    height: 530px;
+    border: 1px black solid;
+    text-align: center;
+
+}
+.producto2 div p {
+    margin: 15px;
+    font-size: 30px;
+}
+.producto2 div a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    }
+/* fin de page productos */
+
+.titulo-portafolio {
+    background-color:  rgb(0, 170, 213);
+    height: 100px;
+    padding: 10px;
+}
+
+.titulo-portafolio h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.foto img {
+    width: 350px;
+    height: 300px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    row-gap: 10px;
+    column-gap: 0px;
+}
+
+.foto1 {
+    grid-column-start:1 ;
+    grid-column-end:3 ;
+    grid-row-start:1 ;
+    grid-row-end:3 ;
+}
+
+.foto1 img {
+    width: 869px;
+    height: 620px;
+}
+ /* fin de page de portaflio */
+
+/* comienzo de responsi del index */
+
+@media screen and (max-width: 1443px){
+    .producto div {
+        width: 300px;
+        height: 380px;
+        border: 1px black solid;
+        text-align: center;
+        margin: 50px 80px 50px 80px;
+    }
+}
+
+@media screen and (max-width: 1203px){
+    .producto div {
+        width: 300px;
+        height: 380px;
+        border: 1px black solid;
+        text-align: center;
+        margin: 30px 20px 20px 20px;
+    }
+}
+
+
+@media screen and (max-width: 952px){
+    .producto div {
+        width: 200px;
+        height: 280px;
+        border: 1px black solid;
+        text-align: center;
+        margin: 30px 20px 20px 20px;
+    }
+}
+@media screen and (max-width:952px){
+    .producto div img {
+        width:198px;
+        height: 200px;
+
+    }
+}
+@media screen and (max-width:952px){
+    .producto div p {
+        margin: 7px;
+        font-size: 15px;
+    }
+    .producto div a {
+        background-color: black;
+        color: white;
+        padding: 8px;
+        border-radius: 15px;
+        font-size: 15px;
+
+    }
+}
+
+
+
+@media screen and (max-width:1215px) {
+    .exhibicion img {
+        width: 50%;
+        flex-wrap: wrap;
+        height: 390px;
+    }
+
+}
+
+@media screen and (max-width:1215px) {
+    .decoracion img {
+        width: 50%;
+        flex-wrap: wrap;
+        height: 390px;
+    }
+
+}
+
+@media screen and (max-width:960px) {
+    .exhibicion {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(0, 170, 213);
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width:960px) {
+    .exhibicion img {
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
+       }
+}
+
+@media screen and (max-width:960px) {
+    .decoracion {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        justify-content: center;
+        background-color:rgb(0, 170, 213) ;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .decoracion img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:706px) {
+    .producto {
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:706px) {
+    .producto div {
+        width: 300px;
+        height: 380px;
+        border: 1px black solid;
+        text-align: center;
+        margin: 30px 20px 20px 20px;
+    }
+}
+@media screen and (max-width:706px){
+    .producto div img {
+        width: 298px;
+        height: 300px;
+    }
+}
+@media screen and (max-width:476px) {
+    .logo {
+        width: 70%;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width:555PX){
+    .hero div h1 {
+        color: white;
+        font-size: 30px;
+
+    }
+}
+
+@media screen and (max-width:670px){
+    .hero {
+        background-image: url("../img/fondo.jpg") ;
+        width:100%;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width:501px){
+    .hero {
+        background-image: url("../img/fondo2.jpg") ;
+        width:auto;
+        height: 300px;
+        /* background-repeat: no-repeat;
+        background-size: cover; */
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width:500px){
+    .pie nav ul a {
+        font-size: 15px;
+        color: white;
+    }
+    .pie div h4 {
+        color: white;
+        font-size:15px;
+        margin-left:  20px;
+    }
+    .pie img {
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+    }
+}
+
+/* fin responsi del index */
+
+/* comienzo del responsi del servicio*/
+
+@media screen and (max-width:800px) {
+    .latex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        width: 100%;
+        height: 250px;
+
+    }
+}
+@media screen and (max-width:800px){
+    .latex iframe {
+        width:50% ;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .latex2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        width: 100%;
+        height: 250px;
+
+    }
+}
+@media screen and (max-width:800px){
+    .latex2 iframe {
+        width:50% ;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .latex div h2 {
+       font-size: 20px;
+       text-align: center;
+       color: white;
+    }
+}
+
+@media screen and (max-width:800px){
+    .latex div p {
+       font-size: 12px;
+       text-align: center;
+       color: white;
+    }
+}
+@media screen and (max-width:800px){
+    .latex2 div h2 {
+       font-size: 20px;
+       text-align: center;
+       color: white;
+    }
+}
+
+@media screen and (max-width:800px){
+    .latex2 div p {
+       font-size: 12px;
+       text-align: center;
+       color: white;
+    }
+}
+
+@media screen and (max-width:800px){
+    .latex div h2 {
+       font-size: 20px;
+       text-align: center;
+       color: white;
+    }
+}
+
+@media screen and (max-width:800px){
+    .titilo-de-tecnologia h1 {
+       font-size: 50px;
+       text-align: center;
+       color: white;
+    }
+}
+
+@media screen and (max-width:500px){
+    .latex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        height: calc(100vh- 122px)
+
+    }
+    .latex2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        height: 100;
+
+    }
+}
+
+@media screen and (max-width:800px) {
+    .latex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        width: 100%;
+        height: 300px;
+
+    }
+}
+
+@media screen and (max-width:500px){
+    .latex iframe {
+        width:100% ;
+        height: 500px   ;
+    }
+}
+@media screen and (max-width:800px) {
+    .latex2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        width: 100%;
+        height: 300px;
+
+    }
+}
+
+@media screen and (max-width:500px){
+    .latex2 iframe {
+        width:100% ;
+        height: 300px   ;
+    }
+}
+
+@media screen and (max-width:445px){
+    .titilo-de-tecnologia h1 {
+        font-size: 30px;
+        text-align: center;
+        color: white;
+    }
+}
+
+@media screen and (max-width:445px){
+    .titilo-de-tecnologia {
+        background-color: black;
+        width: 100%;
+        height: 50px;
+    }
+    .titilo-de-tecnologia h1 {
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        }
+}
+/* fin del responsi del servicio*/
+
+/* comienzo del responsi del servicio*/
+@media screen and (max-width:460px){
+    .carousel-control-prev {
+        height: 400px;
+    
+    }
+    
+    .carousel-control-next{
+        height: 100px;
+    }
+    
+    .carousel-inner {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:775px){
+    .carousel-control-prev {
+        height: 300px;
+    
+    }
+    
+    .carousel-control-next{
+        height: 300px;
+    }
+    
+    .carousel-inner {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:573px){
+    .titulo2 h2{
+        text-align: center;
+        color: white;
+        font-size:30px;
+    
+    }
+    .titulo2 h2{
+        border: 2px solid white;
+        border-radius: 15px;
+        height: auto;
+        width: 33,3%;
+    
+    }
+    .titulo2 h3{
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+    
+    .titulo2 h3{
+        border: 2px solid white;
+        border-radius: 15px;
+        height: auto;
+        width: 33,3%;
+    
+    }
+    
+    .titulo2 h4{
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+    .titulo2 h4{
+        border: 2px solid white;
+        border-radius: 15px;
+        height: auto;
+        width: 33,3%;
+    
+    }
+} 
+
+@media screen and (max-width:573px) {
+    .titulo-servicio p{
+        font-size: 20px;
+        
+    }
+}  
+
+@media screen and (max-width:463px){
+    .titulo2 h2{
+        text-align: center;
+        color: white;
+        font-size:15px;
+    
+    }
+    .titulo2 h2{
+        border: 2px solid white;
+        border-radius: 15px;
+        height: auto;
+        width: 33,3%;
+    
+    }
+    .titulo2 h3{
+        text-align: center;
+        color: white;
+        font-size: 15px;
+    }
+    
+    .titulo2 h3{
+        border: 2px solid white;
+        border-radius: 15px;
+        height: auto;
+        width: 33,3%;
+    
+    }
+    
+    .titulo2 h4{
+        text-align: center;
+        color: white;
+        font-size: 15px;
+    }
+    .titulo2 h4{
+        border: 2px solid white;
+        border-radius: 15px;
+        height: auto;
+        width: 33,3%;
+    
+    }
+    .titulo-servicio p{
+        font-size: 15px;
+        
+    }
+}
+@media screen and (max-width:463px){
+   .carousel-inner { 
+    height: 225px; 
+}
+.carousel-control-prev {
+    height: 273px;
+
+}
+
+.carousel-control-next{
+    height: 273px;
+}
+}
+/* fin del responsi de servicio */
+
+/* comienzo del responsi de producto */
+
+@media screen and (max-width:1309px) {
+    .producto2 {
+        display: grid;
+        grid-template-rows:500px 500px ;
+        grid-template-columns: 350px 350px 350px;
+        column-gap: 20px;
+        row-gap: 40px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:1097px) {
+    .producto2 {
+        display: grid;
+        grid-template-rows:500px 500px ;
+        grid-template-columns: 350px 350px;
+        column-gap: 20px;
+        row-gap: 40px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:727px) {
+    .producto2 {
+        display: grid;
+        grid-template-rows:500px 500px ;
+        grid-template-columns: 350px;
+        column-gap: 20px;
+        row-gap: 40px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:1309px){
+    .producto2 div img {
+        width:350px;
+        height: 400px;
+    
+    }
+    .producto2 div {
+        width: 350px;
+        height: 530px;
+        border: 1px black solid;
+        text-align: center;
+    
+    }
+    .producto2 div p {
+        margin: 15px;
+        font-size: 30px;
+    }
+    .producto2 div a {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        }
+
+}
+
+@media screen and (max-width:937px){
+    .t-producto{
+        background-color: rgb(0, 170, 213);
+        height: auto;
+        width: 100%;
+    
+    }
+    
+    .t-producto div h1{
+        text-align: center;
+        color: white;
+        font-size: 50px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:937px){
+    .t-producto{
+        background-color: rgb(0, 170, 213);
+        height: auto;
+        width: 100%;
+    
+    }
+    
+    .t-producto div h1{
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+
+/* fin del responsi de producto */
+
+/* comienzo del responsi de portafolio */
+@media screen and (max-width:1309px){
+
+     .foto1 img {
+        width: 780px;
+        height: 620px;
+    }
+    }
+
+@media screen and (max-width:1224px){
+
+.foto1 img {
+    width: 750px;
+    height: 620px;
+}
+} 
+@media screen and (max-width:1133px){
+.galeria {
+    width: 100%;
+    height: 100%;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    row-gap: 10px;
+    column-gap: 0px;
+    justify-content: center;
+}
+
+.foto1 {
+    grid-column-start:1 ;
+    grid-column-end:2 ;
+    grid-row-start:1 ;
+    grid-row-end:2 ;
+}
+
+.foto1 img {
+    width: 350px;
+    height: 300px;
+}
+}
+
+@media screen and (max-width:1050px){
+    .galeria {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .galeria {
+        display: grid;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: 1fr 1fr;
+        margin-left: 0px;
+        margin-bottom: 15px;
+        margin-top: 0px;
+        row-gap: 20px;
+        column-gap: 20px;
+        justify-content: center;
+    }
+    
+    .foto1 {
+        grid-column-start:1 ;
+        grid-column-end:2 ;
+        grid-row-start:1 ;
+        grid-row-end:2 ;
+    }
+    
+    .foto1 img {
+        width: 350px;
+        height: 300px;
+    }
+    }
+
+@media screen and (max-width:944px){
+    .titulo-portafolio {
+        background-color:  rgb(0, 170, 213);
+        height: 100%;
+        padding: 10px;
+    }
+    
+    .titulo-portafolio h1 {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:720px){
+    .galeria {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .galeria {
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 1fr;
+        margin-left: 0px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        row-gap: 20px;
+        column-gap: 20px;
+        justify-content: center;
+    }
+    
+    .foto1 {
+        grid-column-start:1 ;
+        grid-column-end:2 ;
+        grid-row-start:1 ;
+        grid-row-end:2 ;
+    }
+    
+    .foto1 img {
+        width: 350px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .titulo-portafolio {
+        background-color:  rgb(0, 170, 213);
+        height: 100%;
+        padding: 10px;
+    }
+    
+    .titulo-portafolio h1 {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+/* fin del resposi deportafolio */
