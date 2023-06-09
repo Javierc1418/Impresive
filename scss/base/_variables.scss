@@ -1,0 +1,10 @@
+$fondo: black;
+$fondo-2: rgb(0, 170, 213);
+$color-fuente: white;
+$borde: black;
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

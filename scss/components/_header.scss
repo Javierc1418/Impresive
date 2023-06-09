@@ -1,0 +1,36 @@
+header {
+        position: sticky;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap:0px;
+        top: 0;
+        font-size: 15px;
+        background-color: $fondo;
+        img {
+            width:350PX ;
+            }
+    nav{
+        border: 1px solid $borde;
+        border-radius: 10px;
+        margin: 10px;
+        }
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }    
+    .container-fluid{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-around;
+    }
+    .navbar{
+        padding: 0px;
+    }
+    .nav-link{
+        color: $fondo;
+    } 
+    .navbar-toggler-icon {
+        background-image: url( "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); 
+    }   
+}
