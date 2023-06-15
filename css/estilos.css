@@ -60,7 +60,8 @@ header {
     border-radius: 15PX; }
     .hero div h1 {
       color: white;
-      font-size: 70px; }
+      font-size: 60px;
+      text-align: center; }
     .hero div p {
       font-size: 20px;
       color: white; }
@@ -306,19 +307,11 @@ header {
   margin-top: 10px;
   margin-right: 0px;
   row-gap: 10px;
-  column-gap: 10px; }
-  .galeria .foto1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3; }
-    .galeria .foto1 img {
-      width: 869px;
-      height: 620px; }
+  column-gap: 5px; }
 
 .foto img {
-  width: 350px;
-  height: 300px; }
+  width: 500px;
+  height: 450px; }
 
 footer {
   background-color: black;
@@ -402,9 +395,25 @@ footer {
       border: 1px black solid;
       text-align: center;
       margin: 30px 20px 20px 20px; }
-    .producto img {
-      width: 298px;
-      height: 300px; } }
+      .producto div img {
+        width: 297px;
+        height: 300px; } }
+
+@media screen and (max-width: 320px) {
+  .producto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .producto div {
+      width: 230px;
+      height: 280px;
+      border: 1px black solid;
+      text-align: center;
+      margin: 30px 20px 20px 20px; }
+      .producto div img {
+        width: 227px;
+        height: auto; } }
 
 @media screen and (max-width: 1215px) {
   .exhibicion img {
@@ -426,6 +435,14 @@ footer {
       flex-wrap: wrap;
       height: auto; } }
 
+@media screen and (max-width: 653px) {
+  .exhibicion div h2 {
+    font-size: 20px; }
+  .exhibicion div p {
+    font-size: 15px; }
+  .exhibicion div a {
+    font-size: 15px; } }
+
 @media screen and (max-width: 1215px) {
   .decoracion img {
     width: 50%;
@@ -445,15 +462,23 @@ footer {
       width: 100%;
       height: auto; } }
 
+@media screen and (max-width: 653px) {
+  .decoracion div h2 {
+    font-size: 20px; }
+  .decoracion div p {
+    font-size: 15px; }
+  .decoracion div a {
+    font-size: 15px; } }
+
 @media screen and (max-width: 925PX) {
   .hero div {
     margin: auto 10px; }
     .hero div h1 {
       color: white;
-      font-size: 50px;
+      font-size: 45px;
       text-align: center; }
     .hero div p {
-      font-size: 30px;
+      font-size: 25px;
       text-align: center; } }
 
 @media screen and (max-width: 750PX) {
@@ -472,10 +497,10 @@ footer {
     margin: auto 10px; }
     .hero div h1 {
       color: white;
-      font-size: 35px;
+      font-size: 30px;
       text-align: center; }
     .hero div p {
-      font-size: 20px;
+      font-size: 18px;
       text-align: center; } }
 
 @media screen and (max-width: 670px) {
@@ -521,6 +546,13 @@ footer {
     flex-wrap: wrap;
     box-sizing: border-box; } }
 
+@media screen and (max-width: 430px) {
+  .titulo {
+    height: auto;
+    padding: 5px; }
+    .titulo h3 {
+      font-size: 20px; } }
+
 @media screen and (max-width: 500px) {
   footer {
     background-color: black;
@@ -547,9 +579,9 @@ footer {
 
 @media screen and (max-width: 1000px) {
   .latex div h2 {
-    font-size: 30px; }
+    font-size: 25px; }
   .latex2 div h2 {
-    font-size: 30px; } }
+    font-size: 25px; } }
 
 @media screen and (max-width: 950px) {
   .latex iframe {
@@ -587,6 +619,18 @@ footer {
     width: 300px;
     height: 350px; } }
 
+@media screen and (max-width: 335px) {
+  .latex iframe {
+    width: 248px;
+    height: 300px; }
+  .latex2 iframe {
+    width: 248px;
+    height: 300px; } }
+
+@media screen and (max-width: 860px) {
+  .titilo-de-tecnologia h1 {
+    font-size: 50px; } }
+
 @media screen and (max-width: 551px) {
   .titilo-de-tecnologia h1 {
     font-size: 40px; } }
@@ -594,6 +638,12 @@ footer {
 @media screen and (max-width: 415px) {
   .titilo-de-tecnologia h1 {
     font-size: 30px; } }
+
+@media screen and (max-width: 380px) {
+  .titilo-de-tecnologia {
+    height: 50px; }
+    .titilo-de-tecnologia h1 {
+      font-size: 20px; } }
 
 @media screen and (max-width: 520px) {
   .latex div {
@@ -609,24 +659,25 @@ footer {
     .latex2 div p {
       font-size: 15px; } }
 
+@media screen and (max-width: 700px) {
+  .titulo-servicio h1 {
+    font-size: 35px; }
+  .titulo-servicio p {
+    font-size: 20px; } }
+
 @media screen and (max-width: 500px) {
   .titulo-servicio h1 {
-    font-size: 30px; }
+    font-size: 27px; }
   .titulo-servicio p {
     font-size: 15px; } }
 
-@media screen and (max-width: 680px) {
-  .titulo2 h2 {
-    font-size: 25px;
-    height: 40px; }
-  .titulo2 h3 {
-    font-size: 25px;
-    height: 40px; }
-  .titulo2 h4 {
-    font-size: 25px;
-    height: 40px; } }
+@media screen and (max-width: 350px) {
+  .titulo-servicio h1 {
+    font-size: 20px; }
+  .titulo-servicio p {
+    font-size: 12px; } }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 680px) {
   .titulo2 h2 {
     font-size: 20px;
     height: 35px; }
@@ -637,7 +688,7 @@ footer {
     font-size: 20px;
     height: 35px; } }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 450px) {
   .titulo2 h2 {
     font-size: 15px;
     height: 25px; }
@@ -648,6 +699,17 @@ footer {
     font-size: 15px;
     height: 25px; } }
 
+@media screen and (max-width: 360px) {
+  .titulo2 h2 {
+    font-size: 12px;
+    height: 20px; }
+  .titulo2 h3 {
+    font-size: 12px;
+    height: 20px; }
+  .titulo2 h4 {
+    font-size: 12px;
+    height: 20px; } }
+
 @media screen and (max-width: 741px) {
   .carousel-inner {
     height: 350px; }
@@ -656,7 +718,7 @@ footer {
   .carousel-control-next {
     height: 250px; } }
 
-@media screen and (max-width: 741px) {
+@media screen and (max-width: 550px) {
   .carousel-inner {
     height: 190px; }
   .carousel-control-prev {
@@ -664,11 +726,28 @@ footer {
   .carousel-control-next {
     height: 250px; } }
 
+@media screen and (max-width: 285px) {
+  .carousel-inner {
+    height: 140px; }
+  .carousel-control-prev {
+    height: 140px; }
+  .carousel-control-next {
+    height: 140px; } }
+
 @media screen and (max-width: 1309px) {
   .producto2 {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    justify-content: center; } }
+
+@media screen and (max-width: 300px) {
+  .producto2 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
     column-gap: 20px;
     row-gap: 40px;
     justify-content: center; } }
@@ -713,43 +792,57 @@ footer {
         height: 100px; }
       .producto2 div a {
         font-size: 10px; }
-  .t-producto div h1 {
-    font-size: 30px;
-    padding-bottom: 5px; } }
+  .t-producto {
+    height: 60px; }
+    .t-producto div h1 {
+      font-size: 16px;
+      padding: 15px; } }
 
-@media screen and (max-width: 1309px) {
-  .galeria .foto1 img {
-    width: 770px;
-    height: 620px; } }
+@media screen and (max-width: 331px) {
+  .producto2 {
+    column-gap: 3px;
+    row-gap: 10px; }
+    .producto2 div {
+      width: 140px;
+      height: 200px;
+      border: 1px black solid;
+      text-align: center; }
+      .producto2 div img {
+        width: 138px;
+        height: 100px; }
+      .producto2 div a {
+        font-size: 10px; }
+  .t-producto {
+    height: 60px; }
+    .t-producto div h1 {
+      font-size: 20px;
+      padding: 5px; } }
+
+@media screen and (max-width: 1310px) {
+  .foto img {
+    width: auto;
+    height: 400px; } }
 
 @media screen and (max-width: 1203px) {
   .galeria {
     margin-left: 10px; }
-    .galeria .foto1 {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 1;
-      grid-row-end: 2; }
-      .galeria .foto1 img {
-        width: 350px;
-        height: 300px; } }
+    .galeria img {
+      width: 350px;
+      height: 300px; } }
 
 @media screen and (max-width: 1203px) {
-  .galeria .foto1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2; }
-    .galeria .foto1 img {
-      width: 300px;
-      height: auto; }
-  .galeria div img {
+  .galeria img {
+    width: 300px;
+    height: auto; }
+  div img {
     width: 300px;
     height: auto; } }
 
 @media screen and (max-width: 1013px) {
-  .titulo-portafolio h1 {
-    font-size: 40px; } }
+  .titulo-portafolio {
+    height: auto; }
+    .titulo-portafolio h1 {
+      font-size: 30px; } }
 
 @media screen and (max-width: 950px) {
   .galeria {
@@ -774,9 +867,27 @@ footer {
     row-gap: 20px;
     column-gap: 20px;
     justify-content: center; }
-  .titulo-portafolio h1 {
-    font-size: 30px; } }
+  .titulo-portafolio {
+    height: 58px; }
+    .titulo-portafolio h1 {
+      font-size: 20px;
+      padding: 0px; } }
 
 @media screen and (max-width: 360px) {
-  .titulo-portafolio h1 {
-    font-size: 25px; } }
+  .titulo-portafolio {
+    height: 65px; }
+    .titulo-portafolio h1 {
+      font-size: 20px; }
+  .galeria {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 1fr;
+    margin-left: 0px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center; }
+  .foto img {
+    width: auto;
+    height: 200px; } }

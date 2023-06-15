@@ -15,7 +15,8 @@
         border-radius: 15PX;
         h1{
         color: $color-fuente;
-        font-size: 70px;
+        font-size: 60px;
+        text-align: center;
         }
         p{
         font-size: 20px;
@@ -310,21 +311,11 @@
     margin-top: 10px;
     margin-right: 0px;
     row-gap: 10px;
-    column-gap: 10px;
-    .foto1{   
-        grid-column-start:1 ;
-        grid-column-end:3 ;
-        grid-row-start:1 ;
-        grid-row-end:3 ;
-        img{
-        width: 869px;
-        height: 620px;
-        }
-    }
+    column-gap: 5px;
 }
 .foto{
     img{
-    width: 350px;
-    height: 300px;
+    width: 500px;
+    height: 450px;
     }
 }
